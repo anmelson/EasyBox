@@ -39,7 +39,7 @@ The goal of this project is use a combination of enumeration and expliots to fir
 ![/data/cache](https://i.imgur.com/T66gv1El.png)
 ![/data/cache/<SNIP>.xml](https://i.imgur.com/Qy1AWqWl.png)
 
-### Digging through the pages we found through the http-enum, we find two intesting things.  The first is an admin.xml file that contains login credentials for the admin account.  Unfortunately, the /admin/ domain still won't load, so let's see if we can find another way.  If the admin page had a login portal, we could use the found credentials and try an injection attack. I could attempt to cURL into the page, but as it's not responding or responding very slowly, we can try another method. If that doesn't work we can come back to this. In the cache folder we find a message saying the version is 3.3.15 and should be updated to 3.3.16.  Let's check for exploits on GetSimple 3.3.15. 
+### Digging through the pages we found through the http-enum, we find two intesting things.  The first is an admin.xml file that contains login credentials for the admin account.  Unfortunately, the /admin/ domain still won't load, so let's see if we can find another way.  If the admin page had a login portal, we could use the found credentials and try an injection attack. We could attempt to cURL into the page, but as it's not responding or responding very slowly, we can try another method. If that doesn't work we can come back to this. In the cache folder we find a message saying the version is 3.3.15 and should be updated to 3.3.16.  Let's check for exploits on GetSimple 3.3.15. 
 
 ![Searchsploit](https://i.imgur.com/IZSUIlbl.png)
 
